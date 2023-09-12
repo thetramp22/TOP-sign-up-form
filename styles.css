@@ -8,10 +8,133 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    display: flex;
+}
+
 .hero {
-    
+    height: 100vh;
+    width: 40vw;
+
+    background-image: url(./images/silas-schneider-kuujKZVKr6I-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+.hero-heading-container {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 20vh;
+    text-align: center;
+}
+
+.hero-heading {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
 }
 
 .hero h1 {
     font-family: 'MedievalSharp', cursive;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    padding: 15px;
+}
+
+.hero img {
+    width: 4rem;
+    height: 4rem;
+    padding: 5px;
+}
+
+.hero-attribution {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+
+.hero-attribution p {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+
+main {
+    background-color: #eee;
+    width: 60vw;
+}
+
+.main-description {
+    margin: 15vh 60px 10vh 40px;
+}
+
+.main-description p {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+form {
+    background-color: #fff;
+    height: 30vh;
+    padding: 25px 40px;
+    box-shadow: 2px 0 5px gray;
+}
+
+form p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.form-col-container {
+    display: flex;
+    gap: 50px;
+}
+
+.form-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-col label {
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+.form-col input {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+
+    padding: 3px 5px;
+
+    font-size: 14px;
+    width: minmax(30rem, 50rem);
+    flex: 1;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 1px 1px 5px;
+}
+
+.main-lower {
+    padding: 30px 40px;
+}
+
+.main-lower button {
+    background-color: #eee;
+    padding: 10px 50px;
+    margin-bottom: 50px;
+    
+    outline: 3px solid green;
+    border-radius: 10px;
+
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.main-lower button:hover {
+    transform: scale(1.1);
 }

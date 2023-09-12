@@ -11,8 +11,11 @@
 </head>
 <body>
     <div class="hero">
-        <div class="hero-heading">
-            <h1>Castleville</h1>
+        <div class="hero-heading-container">
+            <div class="hero-heading">
+                <img src="./images/castle.png" alt="castle image" />
+                <h1>Castleville</h1>
+            </div>
         </div>
         <div class="hero-attribution">
             <p>Fortress icons created by <a href="https://www.flaticon.com/free-icons/fortress" title="fortress icons">Prosymbols Premium - Flaticon</a></p>
@@ -26,26 +29,25 @@
         </div>
         <form action="" method="get" id="form">
             <p>Lets do this!</p>
-            <div>
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name" name="first-name" required />
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last-name" required />
-            </div>
-            <div>
-                <label for="user-email">Email</label>
-                <input type="email" id="user-email" name="user-email" required />
-                <label for="phone-number">Phone Number</label>
-                <input type="tel" id="phone-number" name="phone-number" />
-            </div>
-            <div>
-                <label for="user-password">Password</label>
-                <input type="password" id="user-password" name="user-password" required>
-                <label for="confirm-user-password">Password</label>
-                <input type="password" id="confirm-user-password" name="confirm-user-password" required>
+            <div class="form-col-container">
+                <div class="form-col">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required />
+                    <label for="user-email">Email</label>
+                    <input type="email" id="user-email" name="user-email" required /><label for="user-password">Password</label>
+                    <input type="password" id="user-password" name="user-password" required>
+                </div>
+                <div class="form-col">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required />
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone-number" name="phone-number" />
+                    <label for="confirm-user-password">Confirm Password</label>
+                    <input type="password" id="confirm-user-password" name="confirm-user-password" required>
+                </div>
             </div>
         </form>
-        <div>
+        <div class="main-lower">
             <button type="submit" form="form">Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
